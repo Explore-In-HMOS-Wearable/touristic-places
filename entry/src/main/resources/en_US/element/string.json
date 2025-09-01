@@ -1,0 +1,44 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "label"
+    },
+    {
+      "name": "search",
+      "value": "Search for places"
+    },
+    {
+      "name": "add_note",
+      "value": "Take notes of your memorable moments in the places you visit :)"
+    },
+    {
+      "name": "notes",
+      "value": "Notes"
+    },
+    {
+      "name": "travel_app",
+      "value": "Travel App"
+    },
+    {
+      "name": "add",
+      "value": "Add Note"
+    },
+    {
+      "name": "places",
+      "value": "Places to visit"
+    },
+    {
+      "name": "favorites",
+      "value": "Favorites"
+    }
+  ]
+}

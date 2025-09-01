@@ -1,0 +1,10 @@
+{
+  "src": [
+    "pages/SplashPage",
+    "pages/HomePage",
+    "pages/NotesPage",
+    "pages/FavoritesPage",
+    "pages/PlacesPage",
+    "pages/AddNotePage"
+  ]
+}
