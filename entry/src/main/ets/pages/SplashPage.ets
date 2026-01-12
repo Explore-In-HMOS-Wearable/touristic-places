@@ -1,31 +1,30 @@
-import { curves, router } from '@kit.ArkUI';
+import { curves } from '@kit.ArkUI';
 import { AnimatedText } from '../components/AnimatedText';
 
 @Entry
 @Component
 struct SplashPage {
+  @Provide('mainStack') pathStack: NavPathStack = new NavPathStack()
   private timerId = 0;
   @State planeOffsetX: number = -400;
   @State planeOffsetY: number = 350;
-  @State animateEarth: boolean = false;
+  animateEarth: boolean = false;
   @State earthTranslateY: number = 300;
 
   aboutToAppear() {
-    console.log('GO TO HOME');
-
     setTimeout(() => {
       this.startPlaneAnimation();
     }, 100);
 
     this.timerId = setTimeout(() => {
-      router.replaceUrl({
-        url: 'pages/HomePage',
+      this.pathStack.pushPath({
+        name: 'HomePage'
       });
     }, 5000);
   }
 
   startPlaneAnimation() {
-    animateTo({
+    this.getUIContext().animateTo({
       curve: curves.initCurve(),
       duration: 4500,
       delay: 0,
@@ -44,38 +43,42 @@ struct SplashPage {
   }
 
   build() {
-    Stack() {
-      Column() {
-        Image($rawfile('ic_splash_earth.png'))
-          .width(80)
-          .translate({ y: this.earthTranslateY })
-          .height(80)
-          .animation({
-            curve: curves.initCurve(),
-            iterations: 1,
-            duration: 500,
-            playMode: PlayMode.Alternate,
-          })
-          .onAppear(() => {
-            this.earthTranslateY = 20;
-          })
-      }
-      .height('100%')
-      .width('100%')
-      .justifyContent(FlexAlign.Center)
+    Navigation(this.pathStack) {
 
-      AnimatedText()
-        .position({
-          y: 60
-        })
-      Image($rawfile('ic_splash_plane.png'))
-        .width(100)
-        .height(100)
-        .position({ x: this.planeOffsetX, y: this.planeOffsetY })
-        .rotate({ angle: -30 })
+      Stack() {
+        Column() {
+          Image($rawfile('ic_splash_earth.png'))
+            .width(80)
+            .translate({ y: this.earthTranslateY })
+            .height(80)
+            .animation({
+              curve: curves.initCurve(),
+              iterations: 1,
+              duration: 500,
+              playMode: PlayMode.Alternate
+            })
+            .onAppear(() => {
+              this.earthTranslateY = 20;
+            })
+        }
+        .height('100%')
+        .width('100%')
+        .justifyContent(FlexAlign.Center)
+
+        AnimatedText()
+          .position({
+            y: 60
+          })
+        Image($rawfile('ic_splash_plane.png'))
+          .width(100)
+          .height(100)
+          .position({ x: this.planeOffsetX, y: this.planeOffsetY })
+          .rotate({ angle: -30 })
+      }
+      .width('100%')
+      .height('100%')
+      .backgroundColor(Color.Black)
     }
-    .width('100%')
-    .height('100%')
-    .backgroundColor(Color.Black)
+    .hideTitleBar(true)
   }
 }

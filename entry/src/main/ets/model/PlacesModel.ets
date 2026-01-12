@@ -8,7 +8,7 @@ export const dummyPlaces: Places[] = [
   {
     name: 'Efes Antik Kenti',
     image: $r('app.media.efes'),
-    city: 'Izmir',
+    city: 'Izmir'
   },
   {
     name: 'Li River',
@@ -18,7 +18,7 @@ export const dummyPlaces: Places[] = [
   {
     name: 'Ölüdeniz',
     image: $r('app.media.oludeniz'),
-    city: 'Fethiye',
+    city: 'Fethiye'
   },
   {
     name: 'Nemrut Dagi',
@@ -28,7 +28,7 @@ export const dummyPlaces: Places[] = [
   {
     name: 'Pamukkale Travertenleri',
     image: $r('app.media.pamukkale'),
-    city: 'Denizli',
+    city: 'Denizli'
   },
   {
     name: 'Kiz Kulesi',

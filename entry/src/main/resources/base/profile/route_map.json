@@ -1,0 +1,29 @@
+{
+  "routerMap": [
+    {
+      "name": "HomePage",
+      "pageSourceFile": "src/main/ets/pages/HomePage.ets",
+      "buildFunction": "HomePageBuilder"
+    },
+    {
+      "name": "PlacesPage",
+      "pageSourceFile": "src/main/ets/pages/PlacesPage.ets",
+      "buildFunction": "PlacesPageBuilder"
+    },
+    {
+      "name": "NotesPage",
+      "pageSourceFile": "src/main/ets/pages/NotesPage.ets",
+      "buildFunction": "NotesPageBuilder"
+    },
+    {
+      "name": "FavoritesPage",
+      "pageSourceFile": "src/main/ets/pages/FavoritesPage.ets",
+      "buildFunction": "FavoritesPageBuilder"
+    },
+    {
+      "name": "AddNotePage",
+      "pageSourceFile": "src/main/ets/pages/AddNotePage.ets",
+      "buildFunction": "AddNotePageBuilder"
+    }
+  ]
+}

@@ -57,18 +57,18 @@ export struct NotesListComponent {
               builder: () => {
                 this.itemEnd()
               },
-              actionAreaDistance: 56,
+              actionAreaDistance: 56
             },
             start: {
               builder: () => {
                 this.itemStart()
               },
-              actionAreaDistance: 56,
+              actionAreaDistance: 56
             }
           })
           // Add bottom margin to the last item to make it visible
           .margin({ bottom: index === this.notes.length - 1 ? '45%' : '0' })
-        }, (index: number) => index.toString())
+        }, (item: NotesModel) => item.id.toString())
       }
       .chainAnimation(true)
       .edgeEffect(EdgeEffect.Spring)

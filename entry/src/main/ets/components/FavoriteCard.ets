@@ -6,8 +6,8 @@ export struct FavoriteCard {
   @Prop name: string
   @Prop city: string
   @State favImage: string = '/icons/full_fav.png';
-  @State isFavorited: boolean = false;
-  @State favorites: Array<Favorites> = [];
+  isFavorited: boolean = false;
+  favorites: Array<Favorites> = [];
 
   build() {
     Column() {

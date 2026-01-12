@@ -13,7 +13,7 @@ export const dummyFavorites: Favorites[] = [
   {
     name: 'Ölüdeniz',
     image: $r('app.media.oludeniz'),
-    city: 'Fethiye',
+    city: 'Fethiye'
   },
   {
     name: 'Kiz Kulesi',

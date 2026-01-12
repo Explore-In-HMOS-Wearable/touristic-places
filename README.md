@@ -1,4 +1,4 @@
-> **Note:** To access all shared projects, get information about environment setup, and view other guides, please visit [Explore-In-HMOS-Wearable Index](https://github.com/Explore-In-HMOS-Wearable/hmos-index).
+> **Note:** To access all shared projects, get information about environment setup, and view other guides, please visit 
 
 # Touristic Places Application
 
@@ -7,10 +7,10 @@ This project demonstrates a touristic places for inspiring the trip plan. This a
 # Preview
 
 <div>
-   <img src="./Screenshots/splashoutput.gif" width="24%"/>
-   <img src="./Screenshots/notesoutput.png" width="24%"/>
-   <img src="./Screenshots/placesoutput.png" width="24%"/>
-   <img src="./Screenshots/menupageoutput.png" width="24%"/>
+   <img src="./screenshots/splashoutput.gif" width="24%"/>
+   <img src="./screenshots/notesoutput.png" width="24%"/>
+   <img src="./screenshots/placesoutput.png" width="24%"/>
+   <img src="./screenshots/menupageoutput.png" width="24%"/>
 </div>
 
 # Use Cases
@@ -27,7 +27,7 @@ It is a tourism app for users who want to travel and take notes. The buttons do 
 - **Languages**: ArkTS
 - **Frameworks**: HarmonyOS SDK 5.0.2(14)
 - **Tools**: DevEco Studio Vers 5.1.0.240SP1
-- **Libraries**: @kit.ArkUI 
+- **Libraries**: @kit.ArkUI
 
 # Directory Structure
    ```

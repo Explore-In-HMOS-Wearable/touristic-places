@@ -10,6 +10,8 @@ export struct SearchBar {
       .searchIcon({
         src: $r('app.media.search')
       })
+      .placeholderColor(Color.Black)
+      .fontColor(Color.Black)
       .width('60%')
       .height('13%')
       .backgroundColor(this.color)

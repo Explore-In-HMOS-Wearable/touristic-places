@@ -24,7 +24,7 @@ export struct AnimatedText {
           iterations: 1,
           duration: 500,
           delay: 500,
-          playMode: PlayMode.Alternate,
+          playMode: PlayMode.Alternate
         })
         .onAppear(() => {
           this.opacityValue = 1;
