@@ -7,10 +7,10 @@ This project demonstrates a touristic places for inspiring the trip plan. This a
 # Preview
 
 <div>
-   <img src="./screenshots/splashoutput.gif" width="24%"/>
-   <img src="./screenshots/notesoutput.png" width="24%"/>
-   <img src="./screenshots/placesoutput.png" width="24%"/>
-   <img src="./screenshots/menupageoutput.png" width="24%"/>
+   <img src="./Screenshots/splashoutput.gif" width="24%"/>
+   <img src="./Screenshots/notesoutput.png" width="24%"/>
+   <img src="./Screenshots/placesoutput.png" width="24%"/>
+   <img src="./Screenshots/menupageoutput.png" width="24%"/>
 </div>
 
 # Use Cases
